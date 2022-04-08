@@ -12,7 +12,8 @@
     <title>Proyectos</title>
 </head>
 <body>
-    <header class="container-header">
+    <div class="grid-container">
+    <header class="header">
         <!--  <div class="container-logo">
              <h2>
                  LOGO
@@ -38,66 +39,93 @@
              </ul>
          </nav>
      </header>
-
-    <main>
+     <aside class="aside-container-left">
+        <section class="flex-container">
+            <article class="flex_item">
+                <h1>Proyectos</h1>
+                <p>Estos proyectos estan realizados con el lenguaje java y con el gestor de base de datos MySql.</p> 
+                <p>En el repositorio tienes acceso a la base de datos y el proyecto completo.</p>
+                <h2>Requisitos</h2>
+                <p>JDK 8</p>   
+                <p>NetBeans IDE 8.2</p>
+                <p>XAMP</p>
+                <p>MySQL Query Browser</p>  
+            </article>  
+        </section>
+    </aside>
+    <main class="main">
         <!-- Empieza main -->
         <section class="main-container-proyecto">
             <article class="flex_main-proyecto">
                 <img src="../assets/proyectos/desarrollo-sistemas.png" class="info" alt="img-proyecto">
-                <h6><center><strong>Sistema de Ventas</strong></center></h6> 
+                <p><strong>Sistema de Ventas</strong></p> 
                 <div class="flex_item-buttom">
-                    <button type="submit" class="btn btn-primary">Download</button>
+                    <button type="submit" class="btn btn-primary">Repositorio</button>
                 </div>
             </article>
             <article class="flex_main-proyecto">
                 <img src="../assets/proyectos/desarrollo-sistemas.png" class="info" alt="img-proyecto">
-                <h6><center><strong>Sistema de Consultas</strong></center></h6> 
+                <p><strong>Sistema de Consultas</strong></p> 
                 <div class="flex_item-buttom">
-                    <button type="submit" class="btn btn-primary">Download</button>
+                    <button type="submit" class="btn btn-primary">Repositorio</button>
                 </div>
             </article>
             <article class="flex_main-proyecto">
                 <img src="../assets/proyectos/desarrollo-sistemas.png" class="info" alt="img-proyecto">
-                <h6><center><strong>Sistema de Pagos</strong></center></h6> 
+                <p class="transbox"><strong>Sistema de Pagos</strong></p> 
                 <div class="flex_item-buttom">
-                    <button type="submit" class="btn btn-primary">Download</button>
+                    <button type="submit" class="btn btn-primary">Repositorio</button>
                 </div>
             </article>
             <article class="flex_main-proyecto">
                 <img src="../assets/proyectos/desarrollo-sistemas.png" class="info" alt="img-proyecto">
-                <h6><center><strong>Sistema de Inventario</strong></center></h6> 
+                <p><strong>Sistema de Inventario</strong></p> 
                 <div class="flex_item-buttom">
-                    <button type="submit" class="btn btn-primary">Download</button>
+                    <button type="submit" class="btn btn-primary">Repositorio</button>
                 </div>
             </article>
+        
         </section>
         <!-- Termina main! -->
     </main>
-
-    <footer class="flex_container-footer">
-        <section class="flex-footer">
-            <h6><strong>SERVICIOS:</strong></h6>
-            <p>Soluciones Informáticas para Negocios.
-            <p>Diseño y Desarrollo Web.</p>
-            <p>Sistemas de Información. Auditoría de Sistemas.</p>
-        </section>
-        <section class="flex-footer">
-            <h6><strong>DIRECCION:</strong></h6>
-            <p>Las Americas,Av.Panamericana Nte. MZ B,15160</p>
-            <p><center><strong>Huacho-Perú</strong></center></p>
-            <span><center>&copy;JefreySanchez-2022</center></span>
-        </section>
-        <section class="flex-footer">   
-            <h6><strong>CONTACTANOS:</strong></h6>
-            <div class="flex-footer-a">
-                <a class="flex-footer-ai" href="https://www.facebook.com/JefreyMSC30" alt="Img-facebook"  target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="flex-footer-ai"  href="https://wa.me/+51947337544?text=¡Hola,Jefrey Sanchez!"  alt="Img-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                <a class="flex-footer-ai" href="https://www.instagram.com/its_jeffsan/" alt="Img-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-            </div>
-             <p><strong>Email: </strong>jmsc2030@gmail.com<br></p>
-             <p><strong>Celular: </strong>+51 941337544<br></p>
-        </section>       
+    <aside class="aside-container-rigth">
+        <input type="checkbox" id="btn-flotante">
+        <div class="redes-container">
+            <a href="https://www.facebook.com/JefreyMSC30" class="fa fa-facebook"target="_blank"></a>
+             <a href="#" class="fa fa-youtube"target="_blank"></a>
+             <a href="https://wa.me/+51947337544?text=¡Hola,Jefrey Sanchez!"class="fa fa-whatsapp" target="_blank"></a>
+             <a href="https://www.linkedin.com/in/jefrey-miguel-sanchez-coaguila-997898217/" class="fa fa-linkedin" target="_blank"></a> 
+        </div>
+        <div class="btn-flotante">
+                <label for="btn-flotante" class="fa fa-plus btn-float"></label>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="flex_container-footer">
+            <section class="flex-footer">
+                <h6><strong>SERVICIOS:</strong></h6>
+                <p>Soluciones Informáticas para Negocios.
+                <p>Diseño y Desarrollo Web.</p>
+                <p>Sistemas de Información. Auditoría de Sistemas.</p>
+            </section>
+            <section class="flex-footer">
+                <h6><strong>DIRECCION:</strong></h6>
+                <p>Las Americas,Av.Panamericana Nte. MZ B,15160</p>
+                <p class="flex-footer_p"><strong>Huacho-Perú</strong></p>
+                <span>&copy;Portafolio-2022</span>
+            </section>
+            <section class="flex-footer">   
+                <h6><strong>CONTACTANOS:</strong></h6>
+                <div class="flex-footer-a">
+                    <a class="flex-footer-ai" href="https://www.facebook.com/JefreyMSC30" alt="Img-facebook"  target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="flex-footer-ai"  href="https://wa.me/+51947337544?text=¡Hola,Jefrey Sanchez!"  alt="Img-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a class="flex-footer-ai" href="https://www.instagram.com/its_jeffsan/" alt="Img-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+                 <p><strong>Email: </strong>jmsc2030@gmail.com - Jefrey Sanchez</p>
+                 <p><strong>Celular: </strong>+51941337544</p>
+            </section>  
+        </div>     
     </footer>
-
+</div>  
 </body>
 </html>

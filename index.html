@@ -8,19 +8,22 @@
     <script src="https://kit.fontawesome.com/0cf0a574ec.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css"type="text/css">
+
+    <!-- FONTELLO - ICON FLOTANTES -->
     <title>Portafolio</title>
 
 </head>
    
     <body>
-<!--     <h1>Portafolio</h1>
- -->      <!-- Empieza barra de menú -->
-    <header class="container-header">
+    <div class="grid-container">
+        <!--<h1>Portafolio</h1> -->   
+           <!--Empieza barra de menú -->
+    <header class="header">
        <!--  <div class="container-logo">
             <h2>
                 LOGO
             </h2>
-        </div> -->
+        </div>  -->
         <nav class="nav">
             <ul class="nav_ul"> 
                 <li class="nav_li"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
@@ -41,11 +44,9 @@
             </ul>
         </nav>
     </header>
-  
-    <main>
-    <!-- Empieza main -->
-    <section class="flex-container">
-      <article class="flex_item">
+    <aside class="aside-container-left">
+        <section class="flex-container">
+            <article class="flex_item">
                 <h1>Hello word</h1>
                 <h2>Jefrey Sanchez</h2> 
                 <p>I’m student of Ing.Informatic and I’m 20 years.</p>
@@ -54,15 +55,34 @@
                 <div class="flex_item-buttom">
                     <button type="submit" class="btn btn-primary">Download CV</button>
                 </div>
-    </article>
-    <article class="flex_item">
+            </article>  
+        </section>
+    </aside>
+
+    <main class="main">
+    <!-- Empieza main -->
+    <section class="flex-container">
+        <article class="flex_item">
                 <img src="./assets/img/jefrey.jpg" class="info"alt="Img-person">
-    </article> 
+         </article> 
     </section>
     <!-- Termina main! -->
     </main>
+    <aside class="aside-container-rigth">
+            <input type="checkbox" id="btn-flotante">
+            <div class="redes-container">
+                <a href="https://www.facebook.com/JefreyMSC30" class="fa fa-facebook"target="_blank"></a>
+                 <a href="#" class="fa fa-youtube"target="_blank"></a>
+                 <a href="https://wa.me/+51947337544?text=¡Hola,Jefrey Sanchez!"class="fa fa-whatsapp" target="_blank"></a>
+                 <a href="https://www.linkedin.com/in/jefrey-miguel-sanchez-coaguila-997898217/" class="fa fa-linkedin" target="_blank"></a> 
+            </div>
+            <div class="btn-flotante">
+                    <label for="btn-flotante" class="fa fa-plus btn-float"></label>
+            </div>
+    </aside>
 
-    <footer class="flex_container-footer">
+    <footer class="footer">
+        <div class="flex_container-footer">
             <section class="flex-footer">
                 <h6><strong>SERVICIOS:</strong></h6>
                 <p>Soluciones Informáticas para Negocios.
@@ -72,8 +92,8 @@
             <section class="flex-footer">
                 <h6><strong>DIRECCION:</strong></h6>
                 <p>Las Americas,Av.Panamericana Nte. MZ B,15160</p>
-                <p><center><strong>Huacho-Perú</strong></center></p>
-                <span><center>&copy;JefreySanchez-2022</center></span>
+                <p class="flex-footer_p"><strong>Huacho-Perú</strong></p>
+                <span>&copy;Portafolio-2022</span>
             </section>
             <section class="flex-footer">   
                 <h6><strong>CONTACTANOS:</strong></h6>
@@ -82,10 +102,13 @@
                     <a class="flex-footer-ai"  href="https://wa.me/+51947337544?text=¡Hola,Jefrey Sanchez!"  alt="Img-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a>
                     <a class="flex-footer-ai" href="https://www.instagram.com/its_jeffsan/" alt="Img-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
                 </div>
-                 <p><strong>Email: </strong>jmsc2030@gmail.com<br></p>
-                 <p><strong>Celular: </strong>+51 941337544<br></p>
-            </section>       
+                 <p><strong>Email: </strong>jmsc2030@gmail.com - Jefrey Sanchez</p>
+                 <p><strong>Celular: </strong>+51941337544</p>
+            </section>  
+        </div>     
     </footer>
-
+</div>
 </body>
+
+
 </html>
