@@ -26,16 +26,6 @@
                  <li class="nav_li"><i class="fas fa-folder"></i><a href="../pages/proyecto.html">Proyectos</a></li>
                  <li class="nav_li"><i class="fas fa-address-book"></i><a href="../pages/contacto.html">Contacto</a></li>
              </ul>
-             <ul class="nav_responsive-ul">
-                 <div class="nav_responsive-button-container">
-                     <div class="nav_responsive-button"><i class="fas fa-bars"></i></div> 
-                 </div>
-                 <li class="nav_responsive-li"><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
-                 <li class="nav_responsive-li"><i class="fas fa-laptop-code"></i><a href="../pages/servicio.html">Servicios</a></li>
-                 <li class="nav_responsive-li"><i class="fas fa-code"></i><a href="../pages/skills.html" >Skills</a></li>
-                 <li class="nav_responsive-li"><i class="fas fa-folder"></i><a href="../pages/proyecto.html">Proyectos</a></li>
-                 <li class="nav_responsive-li"><i class="fas fa-address-book"></i><a href="../pages/contacto.html">Contacto</a></li>
-             </ul>
          </nav>
      </header>
 
@@ -48,7 +38,7 @@
                 <p>Publicidad y Generacion de Audiencia.</p>
                 <p>Mantenimiento</p>        
                <div class="flex_item-buttom">
-                    <button type="submit" class="btn btn-primary">Download</button>
+                    <button type="submit"  class="btn btn-primary btn-sm">Download</button>
                 </div> 
             </article>  
         </section>
@@ -56,10 +46,27 @@
 
     <!-- Empieza main -->
      <main class="main">
-        <section class="flex-container">      
-        <article class="flex_item">
-                    <img src="../assets/img/servicios.jpg" class="info"alt="Img-person">
-        </article> 
+        <section class="flex-container">
+            <article class="flex_item">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/jefrey2.jpg" class="d-block w-100" alt="Img-person">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/jefrey1.jpg" class="d-block w-100" alt="Img-person">
+                        </div>
+                    </div>
+                    <a href="#carouselExample" class="carousel-control-prev" role="button"  data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a href="#carouselExample" class="carousel-control-next" role="button"  data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Posterior</span>
+                    </a>
+                </div>
+             </article> 
         </section>
     </main>
     <!-- Termina main! -->
