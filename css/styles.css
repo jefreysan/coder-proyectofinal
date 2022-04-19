@@ -336,7 +336,6 @@
 .flex_container-footer{
     display: flex;
     flex-wrap: wrap;
-    height: 90%;
     justify-content: center;  
     background-image: linear-gradient(to right, #0fddf0, #00bdff, #0098ff, #006bff, #3712eb);
     color: #fff;
