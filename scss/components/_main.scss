@@ -1,0 +1,95 @@
+
+$color-letra: #3700B3;
+$clr-blue-900: #633fb1;
+$clr-white: #FFFF;
+$clr-black :rgb(0, 0, 0);
+
+.aside-container-left{
+    display: flex;
+    margin: 10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex_item{
+    width: 85%;
+    h2{
+        text-align: center;
+        margin: 0px auto;
+        color: $clr-white;
+        font-size: 70px;
+        letter-spacing: 3px;
+        top: 50%;
+        margin-top: -10px;
+        text-shadow: -1px -1px 0px $clr-black,
+                    3px 3px 0px $clr-black,
+                    6px 6px 0px $clr-blue-900;
+      }
+      p{
+        margin: 5px;
+        text-align: center;
+        color: $clr-black;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    img{
+        height: 25rem;
+        object-fit: cover;
+    }
+}
+.flex_item-buttom{
+    display: flex;
+    justify-content: center;
+}
+
+/* BOTONES FLOTANTE */
+#btn-flotante{
+    display: none;
+}
+.aside-container-rigth{
+    position: fixed;
+    bottom: 220px;
+    right: 20px;
+}
+.redes-container a , .btn-float{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(31,71,170);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0,0.4);
+    transition: all 500ms ease;
+}
+.redes-container a:hover{
+    background: #fff; /* FONDO */
+    color:#FF5733 /* ICON */
+}
+
+.redes-container a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-flotante:checked~ .redes-container a{
+   margin-bottom: 10px;
+   opacity: 1;
+   visibility: visible;
+}
+.btn-float{
+    cursor: pointer;
+    background: #FF5733;
+    font-size: 23px;
+}
+
+#btn-flotante:checked~ .btn-flotante .btn-float{
+    transform: rotate(137deg);
+    font-size: 25px;
+}

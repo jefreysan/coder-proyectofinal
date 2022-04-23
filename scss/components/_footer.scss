@@ -1,0 +1,52 @@
+
+$color-footer:#2f0396;
+$color-letra: #ffff;
+$color-icon:#ffff;
+$font-letra:'Roboto', sans-serif;
+$icon-hover: #00FFFF;
+.footer_grid-1{
+    grid-area: sgrid-1;
+}
+.footer_grid-2{
+    grid-area: sgrid-2;
+}
+.footer_grid-3{
+    grid-area: sgrid-3;
+}
+
+footer{
+    background-color: $color-footer;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-areas:
+    "sgrid-1 sgrid-2 sgrid-3";
+
+    section{
+        font-family: $font-letra;
+        color: $color-letra;
+        padding: 10px;
+        h6{
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .flex-footer-a{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        .flex-footer-ai{
+            padding-right: 1rem;
+            color: $color-icon;
+            &:hover{
+                color: $icon-hover
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,29 @@
+
+$color-header:#3700B3;
+$color-icons:#ffff;
+$color-letra:#ffff;
+$size-letra: 1em;
+$font-letra:'Roboto', sans-serif;
+
+nav{
+    background-color: $color-header;
+    display: flex;
+    justify-content: flex-end;
+    li{
+     display: inline-block;
+     list-style: none;
+     padding: 1em;
+     margin: 3px;
+     color: $color-icons;
+        a{
+            text-decoration: none;
+            color: $color-letra;
+            font-family: $font-letra;
+            font-size:$size-letra;
+            font-weight: bold; 
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}

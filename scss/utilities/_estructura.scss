@@ -1,0 +1,32 @@
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    bottom: 0;
+    margin-top: auto;
+    grid-area: footer;
+}
+
+.aside-container-left{
+    grid-area: aside-left;
+}
+
+.aside-container-rigth{
+    grid-area: aside-rigth;
+}
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 3fr 6fr 1fr; /* 45% 55% 5% */
+    grid-template-rows: 1fr 12fr 1fr; /* 5% 90% 5% */
+    grid-template-areas:
+    "header header header" /*  */
+    "aside-left main aside-rigth"
+    "footer footer footer";
+}
