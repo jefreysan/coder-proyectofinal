@@ -1,17 +1,18 @@
-
 $card-hover: #DCDCDC;
 
-.main-container-proyecto{
+.main-container-proyecto {
     display: flex;
     flex-wrap: wrap;
-    .flex_main-proyecto{
+
+    .flex_main-proyecto {
         margin: 1rem;
         text-align: center;
-        .card{
-            &:hover{
+
+        .card {
+            &:hover {
                 background-color: $card-hover;
             }
         }
     }
- 
+
 }

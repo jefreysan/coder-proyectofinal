@@ -1,0 +1,17 @@
+
+$icon-hover: #f6ffff;
+$redes:(
+  facebook: #acd0ec,
+  whastapp: #65f341,
+  instagram: #b6ae65,
+);
+@each $red, $color in $redes {
+    .boton-#{$red} {
+        color: $color;
+        padding-right: 1rem;
+        &:hover {
+            color: $icon-hover
+        }
+    }  
+ }
+ 

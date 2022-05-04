@@ -1,81 +1,87 @@
 /*MOBILE*/
 @media (max-width: 480px) {
-    .grid-container{
+    .grid-container {
         display: grid;
-        gap:1em;
+        gap: 1em;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "header"
-        "aside-left"
-        "main"
-        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "aside-left"
+            "main"
+            "footer";
     }
-    .flex_item{
-        h2{
+
+    .flex_item {
+        h2 {
             font-size: 1.5rem;
         }
     }
-    .aside-container-rigth{
+
+    .aside-container-rigth {
         display: none;
     }
-    .m-aiframe{
+
+    .m-aiframe {
         width: 300px;
     }
-     footer{
+
+    footer {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "sgrid-1"
-        "sgrid-2"
-        "sgrid-3";
+            "sgrid-1"
+            "sgrid-2"
+            "sgrid-3";
     }
 }
 
 /* RESPONSIVE TABLET */
 @media (min-width: 481px) and (max-width: 800px) {
-    .grid-container{
+    .grid-container {
         display: grid;
-        gap:1em;
+        gap: 1em;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "header"
-        "aside-left"
-        "main"
-        "aside-rigth"
-        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "aside-left"
+            "main"
+            "aside-rigth"
+            "footer";
     }
-    .aside-container-rigth{
+
+    .aside-container-rigth {
         bottom: 230px;
         right: 20px;
     }
 
     /* CONTACTO */
-    .m-aiframe{
+    .m-aiframe {
         width: 400px;
     }
 }
 
 @media (max-width: 801px) and (min-width:1024px) {
-    .grid-container{
+    .grid-container {
         display: grid;
-        gap:1em;
+        gap: 1em;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "header"
-        "aside-rigth"
-        "main"
-        "aside-left"
-        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "header"
+            "aside-rigth"
+            "main"
+            "aside-left"
+            "footer";
     }
-            /* CONTACTO */
-    .m-aiframe{
+
+    /* CONTACTO */
+    .m-aiframe {
         width: 500px;
     }
 }

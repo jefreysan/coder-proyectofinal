@@ -65,12 +65,6 @@ nav li i {
   margin: 10px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .flex_item {
   width: 85%;
 }
@@ -112,7 +106,8 @@ nav li i {
   right: 20px;
 }
 
-.redes-container a, .btn-float {
+.redes-container a,
+.btn-float {
   display: block;
   text-decoration: none;
   background-color: rgb(31, 71, 170);
@@ -263,12 +258,35 @@ footer section .flex-footer-a {
   justify-content: center;
   padding: 5px;
 }
-footer section .flex-footer-ai {
+
+.boton-facebook {
+  color: #acd0ec;
   padding-right: 1rem;
-  color: white;
 }
-footer section .flex-footer-ai:hover {
-  color: #00FFFF;
+.boton-facebook:hover {
+  color: #f6ffff;
+}
+
+.boton-whastapp {
+  color: #65f341;
+  padding-right: 1rem;
+}
+.boton-whastapp:hover {
+  color: #f6ffff;
+}
+
+.boton-instagram {
+  color: #b6ae65;
+  padding-right: 1rem;
+}
+.boton-instagram:hover {
+  color: #f6ffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*MOBILE*/
